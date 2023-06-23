@@ -28,7 +28,6 @@ This section describes the signals and their directions from the perspective of 
 | ETH\_RXx | 3.3V | I | Ethernet RMII PHY receive data |
 | ETH\_TXEN | 3.3V | O | Ethernet RMII PHY transmit enable |
 | ETH\_CRS\_DV | 3.3V | I | Ethernet RMII PHY carrier sense / receive data valid |
-| ETH\_TXEN | 3.3V | O | Ethernet RMII PHY transmit enable |
 | ETH\_RST\_N | 3.3V | O | Ethernet RMII PHY reset (active low) |
 | ETH\_CLK50 | 3.3V | I | Ethernet/video clock (50MHz) |
 | DDMI\_xx\_x | 3.3V | O | [DDMI](https://github.com/machdyne/ddmi) interface |
