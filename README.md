@@ -51,6 +51,7 @@ Sechzig modules can operate with 2.5V or 3.3V I/O (some signals must be 3.3V on 
 
 ### Module Dimensions
 
-Length: 79mm
+Width: 79mm
 Height: 50mm max
 Depth: 8mm max (4mm from center)
+Card Edge Depth: 1.4mm - 1.6mm
