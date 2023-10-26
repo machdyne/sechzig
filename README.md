@@ -10,7 +10,7 @@ This repo contains detailed specifications as well as relevant KiCad symbols and
 
 ### Signals
 
-This section describes the signals and their directions from the perspective of the module.
+This section describes the signals from the perspective of the module when paired with [Mozart](https://github.com/machdyne/mozart).
 
 | Signal | Voltage | Dir | Description |
 | ------ | ------- | --- | ----------- |
@@ -32,7 +32,7 @@ This section describes the signals and their directions from the perspective of 
 | ETH\_RST\_N | PWRIO | O | Ethernet RMII PHY reset (active low) |
 | ETH\_CLK50 | PWRIO | I | Ethernet/video clock (50MHz) |
 | DDMI\_xx\_x | 3.3V | O | [DDMI](https://github.com/machdyne/ddmi) interface |
-| Xx | PWRIO | IO | 2-wire Module <-> Host link | 
+| Xx | PWRIO | IO | Module <-> Host link (e.g. LiteX SPIBone)) | 
 | SD\_CD\_N | 3.3V | I | SD card detect (active low) |
 | SD\_SS | 3.3V | IO | SD slave select / DAT3 |
 | SD\_SCK | 3.3V | O | SD clock |
@@ -43,11 +43,17 @@ This section describes the signals and their directions from the perspective of 
 | JTAG\_xxx | PWRIO | IO | JTAG interface |
 | UART\_TX | PWRIO | O | UART transmit |
 | UART\_RX | PWRIO | I | UART receive |
-| IOx | 3.3V | IO | GPIO |
+| DSx\_x | 2.5V | IO | LVDS pairs |
+
+#### Signal Notes
+
+  * While all Sechzig modules should be compatible with [Mozart](https://github.com/machdyne/mozart), it is possible to develop alternative host boards that use some signals for other purposes.
+
+  * The DS signal traces are routed as length-matched 100 ohm differential pairs.
 
 ### Power
 
-Sechzig modules can operate with 2.5V or 3.3V I/O (some signals must be 3.3V on all modules). Modules that use 3.3V I/O can simply connect PWRIO to PWR3V3. Modules that use 2.5V I/O must provide 2.5V on PWRIO.
+Sechzig modules can operate with 2.5V or 3.3V I/O (note that some signals must be 2.5V and 3.3V on all modules). Modules that use 3.3V I/O can simply connect PWRIO to PWR3V3. Modules that use 2.5V I/O must provide 2.5V on PWRIO.
 
 ### Module Dimensions
 
