@@ -10,7 +10,7 @@ This repo contains detailed specifications as well as relevant KiCad symbols and
 
 ### Signals
 
-This section describes the signals from the perspective of the module when paired with [Mozart](https://github.com/machdyne/mozart).
+This section describes the signals from the perspective of the module when paired with [Mozart](https://machdyne.com/product/mozart-motherboard).
 
 | Signal | Voltage | Dir | Description |
 | ------ | ------- | --- | ----------- |
@@ -32,7 +32,7 @@ This section describes the signals from the perspective of the module when paire
 | ETH\_RST\_N | PWRIO | O | Ethernet RMII PHY reset (active low) |
 | ETH\_CLK50 | PWRIO | I | Ethernet/video clock (50MHz) |
 | DDMI\_xx\_x | 3.3V | O | [DDMI](https://github.com/machdyne/ddmi) interface |
-| Xx | PWRIO | IO | Module <-> Host link (e.g. LiteX SPIBone)) | 
+| Xx | PWRIO | IO | Module <-> Host link (e.g. LiteX SPIBone) | 
 | SD\_CD\_N | 3.3V | I | SD card detect (active low) |
 | SD\_SS | 3.3V | IO | SD slave select / DAT3 |
 | SD\_SCK | 3.3V | O | SD clock |
