@@ -63,3 +63,11 @@ Sechzig modules can operate with 2.5V or 3.3V I/O (note that some signals must b
 | Height | 50mm max |
 | Depth | 8mm max (4mm from center) |
 | Card Edge Depth | 1.4mm - 1.6mm |
+
+## License
+
+The contents of this repo are released under the [Lone Dynamics Open License](LICENSE.md) with the following exceptions:
+
+- The KiCad design files may contain symbols and footprints released under other licenses; please contact us if we've failed to give proper attribution.
+
+Note: You can use these designs for commercial purposes but we ask that instead of producing exact clones, that you either replace our trademarks and logos with your own or add your own next to ours.
