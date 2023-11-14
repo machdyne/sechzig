@@ -2,6 +2,8 @@
 
 Sechzig is a work-in-progress compute module specification.
 
+![Sechzig ML1](https://github.com/machdyne/sechzig/blob/4ddd1e48dee8f0d31b78590a8419e66eab25ad2f/ml1.png)
+
 Sechzig modules have a 60-pin 2.54mm card edge connector.
 
 This repo contains detailed specifications as well as relevant KiCad symbols and footprints.
