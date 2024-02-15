@@ -66,6 +66,20 @@ Sechzig modules can operate with 2.5V or 3.3V I/O (note that some signals must b
 | Depth | 8mm max (4mm from center) |
 | Card Edge Depth | 1.4mm - 1.6mm |
 
+### Board Revisions
+
+#### ML1
+
+| Revision | Notes |
+| -------- | ----- |
+| V1 | Initial production version; **Xx signals are not connected** |
+
+#### ML2
+
+| Revision | Notes |
+| -------- | ----- |
+| V0 | Initial production version |
+
 ## License
 
 The contents of this repo are released under the [Lone Dynamics Open License](LICENSE.md) with the following exceptions:
