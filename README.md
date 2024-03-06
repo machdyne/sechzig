@@ -45,13 +45,13 @@ This section describes the signals from the perspective of the module when paire
 | JTAG\_xxx | PWRIO | IO | JTAG interface |
 | UART\_TX | PWRIO | O | UART transmit |
 | UART\_RX | PWRIO | I | UART receive |
-| DSx\_x | 2.5V | IO | LVDS pairs |
+| DSx\_x | 2.5V | IO | Experimental high-speed link |
 
 #### Signal Notes
 
-  * While all Sechzig modules should be compatible with [Mozart](https://github.com/machdyne/mozart), it is possible to develop alternative host boards that use some signals for other purposes.
+  * While all Sechzig modules should be compatible with [Mozart](https://github.com/machdyne/mozart), it is possible to develop alternative host boards that use some signals for other purposes (see [Vivaldi](https://github.com/machdyne/vivaldi) and [Chopin](https://github.com/machdyne/chopin)).
 
-  * The DS signal traces are routed as length-matched 100 ohm differential pairs.
+  * The DSx signal traces are routed as length-matched 100 ohm differential pairs. Functionality may differ between modules.
 
 ### Power
 
@@ -68,17 +68,26 @@ Sechzig modules can operate with 2.5V or 3.3V I/O (note that some signals must b
 
 ### Board Revisions
 
+The version number can be found on the back of the module.
+
 #### ML1
 
 | Revision | Notes |
 | -------- | ----- |
-| V1 | Initial production version; **Xx signals are not connected** |
+| ML1.1 | Initial production version; **Xx signals are not connected** |
+| ML1.2 | Work-in-progress |
 
 #### ML2
 
 | Revision | Notes |
 | -------- | ----- |
-| V0 | Initial production version |
+| ML2.0 | Initial production version |
+
+#### MX1
+
+| Revision | Notes |
+| -------- | ----- |
+| MX1.1 | Initial production version |
 
 ## License
 
