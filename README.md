@@ -75,7 +75,7 @@ The version number can be found on the back of the module.
 | Revision | Notes |
 | -------- | ----- |
 | ML1.1 | Initial production version; **Xx signals are not connected** |
-| ML1.2 | Work-in-progress |
+| ML1.2 | Current production version; connects Xx signals; adds LED |
 
 #### ML2
 
