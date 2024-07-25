@@ -72,6 +72,8 @@ The version number can be found on the back of the module.
 
 #### ML1
 
+Product page for [Sechzig ML1](https://machdyne.com/product/sechzig-ml1-compute-module/).
+
 | Revision | Notes |
 | -------- | ----- |
 | ML1.1 | Initial production version; **Xx signals are not connected** |
@@ -79,15 +81,27 @@ The version number can be found on the back of the module.
 
 #### ML2
 
+Product page for [Sechzig ML2](https://machdyne.com/product/sechzig-ml2-compute-module/).
+
 | Revision | Notes |
 | -------- | ----- |
 | ML2.0 | Initial production version |
 
 #### MX1
 
+Product page for [Sechzig MX1](https://machdyne.com/product/sechzig-mx1-compute-module/).
+
 | Revision | Notes |
 | -------- | ----- |
 | MX1.1 | Initial production version |
+
+#### MX2
+
+Product page for [Sechzig MX2](https://machdyne.com/product/sechzig-mx2-compute-module/).
+
+| Revision | Notes |
+| -------- | ----- |
+| MX2.0 | Initial production version |
 
 ## Funding
 
