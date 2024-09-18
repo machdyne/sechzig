@@ -74,34 +74,35 @@ The version number can be found on the back of the module.
 
 Product page for [Sechzig ML1](https://machdyne.com/product/sechzig-ml1-compute-module/).
 
-| Revision | Notes |
-| -------- | ----- |
-| ML1.1 | Initial production version; **Xx signals are not connected** |
-| ML1.2 | Current production version; connects Xx signals; adds LED |
+| Revision | Stackup | Notes |
+| -------- | ------- | ----- |
+| ML1.1 | Aisler 4L | Initial production version; **Xx signals are not connected** |
+| ML1.2 | Aisler 4L | Current production version; connects Xx signals; adds LED |
 
 #### ML2
 
 Product page for [Sechzig ML2](https://machdyne.com/product/sechzig-ml2-compute-module/).
 
-| Revision | Notes |
-| -------- | ----- |
-| ML2.0 | Initial production version |
+| Revision | Stackup | Notes |
+| -------- | ------- | ----- |
+| ML2.0 | Aisler 6L | Initial production version |
+| ML2.0B | JLC06161H-3313 | Current production version |
 
 #### MX1
 
 Product page for [Sechzig MX1](https://machdyne.com/product/sechzig-mx1-compute-module/).
 
-| Revision | Notes |
-| -------- | ----- |
-| MX1.1 | Initial production version |
+| Revision | Stackup | Notes |
+| -------- | ------- | ----- |
+| MX1.1 | Aisler 4L | Initial production version |
 
 #### MX2
 
 Product page for [Sechzig MX2](https://machdyne.com/product/sechzig-mx2-compute-module/).
 
-| Revision | Notes |
-| -------- | ----- |
-| MX2.0 | Initial production version |
+| Revision | Stackup | Notes |
+| -------- | ------- | ----- |
+| MX2.0 | JLC06161H-3313 | Initial production version |
 
 ## Funding
 
