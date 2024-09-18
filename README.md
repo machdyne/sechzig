@@ -12,7 +12,7 @@ This repo contains detailed specifications as well as relevant KiCad symbols and
 
 ### Signals
 
-This section describes the signals from the perspective of the module when paired with [Mozart](https://machdyne.com/product/mozart-motherboard).
+This section describes the signals from the perspective of the module when paired with [Mozart](https://github.com/machdyne/mozart).
 
 | Signal | Voltage | Dir | Description |
 | ------ | ------- | --- | ----------- |
