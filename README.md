@@ -34,7 +34,7 @@ This section describes the signals from the perspective of the module when paire
 | ETH\_RST\_N | PWRIO | O | Ethernet RMII PHY reset (active low) |
 | ETH\_CLK50 | PWRIO | I | Ethernet/video clock (50MHz) |
 | DDMI\_xx\_x | 3.3V | O | [DDMI](https://github.com/machdyne/ddmi) interface |
-| Xx | PWRIO | IO | Module <-> Host link (e.g. LiteX SPIBone) | 
+| Xx | PWRIO | IO | Extra link (see notes below) |
 | SD\_CD\_N | 3.3V | I | SD card detect (active low) |
 | SD\_SS | 3.3V | IO | SD slave select / DAT3 |
 | SD\_SCK | 3.3V | O | SD clock |
@@ -45,13 +45,32 @@ This section describes the signals from the perspective of the module when paire
 | JTAG\_xxx | PWRIO | IO | JTAG interface |
 | UART\_TX | PWRIO | O | UART transmit |
 | UART\_RX | PWRIO | I | UART receive |
-| DSx\_x | 2.5V | IO | Experimental high-speed link |
+| DSx\_x | 2.5V | IO | Experimental high-speed link (see notes below) |
 
 #### Signal Notes
 
   * While all Sechzig modules should be compatible with [Mozart](https://github.com/machdyne/mozart), it is possible to develop alternative host boards that use some signals for other purposes (see [Vivaldi](https://github.com/machdyne/vivaldi) and [Chopin](https://github.com/machdyne/chopin)).
 
-  * The DSx signal traces are routed as length-matched 100 ohm differential pairs. Functionality may differ between modules.
+##### Extra Link (Xx) Notes
+
+The purpose of the Xx signals is determined by the host board. For example, on Mozart:
+
+| Signal | Description |
+| ------ | ----------- |
+| XA | SPI MISO / I2C SCL |
+| XB | SPI SCK / I2C SDA |
+| XC | SPI MOSI |
+| XD | SPI SS |
+
+##### Experimental High-Speed Link (DSx) Notes
+
+The DSx signal traces are routed as length-matched 100 ohm differential pairs. The following minimum required configuration should be supported by all modules, but some modules may have additional capabilities:
+
+| Signal | Standard | Dir | Required | Description |
+| ------ | -------- | --- | -------- | ----------- |
+| DS0\_x | LVDS25 | IO | N | Transmit and/or Receive |
+| DS1\_x | LVDS25 | O | Y | Transmit |
+| DS2\_x | LVDS25 | I | Y | Receive |
 
 ### Power
 
